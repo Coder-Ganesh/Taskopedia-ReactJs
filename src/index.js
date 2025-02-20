@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"; //No Longer needed from React 18
+import ReactDOM from "react-dom/client";
+import "./CSS/Style.css";
+import Header from "./CSS/Header.jsx";
+import Students from "./CSS/Student.jsx";
+import MainBody from "./CSS/MainBody.jsx";
+import Footer from "./CSS/Footer.jsx";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div className="Container">
+    <Header></Header>
+    <MainBody></MainBody>
+    <div className="row">Students Enrolled</div>
+    <Students experience={2} name="Kris Walley"></Students>
+    <Students experience={5} name="Angel Patricia"></Students>
+    <Students experience={7} name="Rene Parker"></Students>
+    <Footer></Footer>
+  </div>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

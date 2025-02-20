@@ -1,0 +1,6 @@
+export default function Footer() {
+  return (
+    //Styling directly in JSX with HTML for small amount of styles
+    <p style={{ color: "gray", backgroundColor: "black" }}>Happy Coding!!!</p>
+  );
+}
