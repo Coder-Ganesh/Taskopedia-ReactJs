@@ -1,19 +1,24 @@
+import React from "react";
 
-export default function Students(props) {
+class Students extends React.Component {
+  render(){
   return (
     <div className="col-4 p-1">
       <div className="row border">
         <div className="col-1">
-          <img src={props.headshot} className="w-100"></img>
+          <img src={this.props.headshot} className="w-100"></img>
         </div>
         <div className="col-8">
-          {props.name} <br />
-          Coding Knowledge {props.experience} years
+          {this.props.name} <br />
+          Coding Knowledge {this.props.experience} years
         </div>
         <div className="col-2">
-          {props.children}
+          {this.props.children}
         </div>
       </div>
     </div>
   );
 }
+}
+
+export default Students

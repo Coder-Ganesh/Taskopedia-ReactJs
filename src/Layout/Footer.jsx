@@ -1,4 +1,4 @@
-export default function Footer() {
+const Footer = () => {
   return (
     //Styling directly in JSX with HTML for small amount of styles
     <p style={{ color: "gray", backgroundColor: "black"
@@ -6,3 +6,5 @@ export default function Footer() {
      }}>Happy Coding!!!</p>
   );
 }
+
+export default Footer

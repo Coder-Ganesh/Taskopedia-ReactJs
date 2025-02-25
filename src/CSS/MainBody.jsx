@@ -1,7 +1,9 @@
+import React from "react";
 import Students from "./Student.jsx";
 import StudentReview from "./StudentReview.jsx";
 
-export default function MainBody() {
+class MainBody extends React.Component {
+  render(){
   const whatWeWillLearn = "React Js";
   const totalLectureCount = 3;
   return (
@@ -43,3 +45,6 @@ export default function MainBody() {
     </div>
   );
 }
+}
+
+export default MainBody
